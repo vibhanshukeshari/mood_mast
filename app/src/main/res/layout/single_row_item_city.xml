@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view_parent_city"
+    app:cardBackgroundColor="@color/arsenic_1"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rLRootSeagullCity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_view_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/arsenic_1"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/lLSeagullCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/imageViewCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:padding="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/seagull_hd" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderCity"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_city"
+            android:layout_centerInParent="true"
+            android:value="60"
+            android:valueFrom="0"
+            android:valueTo="100"
+            app:thumbColor="@color/white"
+            app:trackColorActive="@color/white"
+            app:trackColorInactive="#4dffffff" />
+
+        <TextView
+            android:id="@+id/textViewCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_view_city"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable-v24/tryy.xml" value="0.125" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/bottom_navigation_icon.xml" value="0.1" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/button_as_toggle.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/controller_shape.xml" value="0.125" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/controller_shape_city.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/ic_try.xml" value="0.125" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/image_seagull.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/pause_new.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/play.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/play_new.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/play_pause.xml" value="0.169" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/ripple_color.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/seaside_blur.xml" value="0.1865" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/trial.xml" value="0.125" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/drawable/tryy.xml" value="0.125" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/fragment_asia.xml" value="0.209375" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/fragment_city.xml" value="0.20948410630536737" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/fragment_countryside.xml" value="0.20948410630536737" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/fragment_favorite.xml" value="0.1953125" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/fragment_home.xml" value="0.209375" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/fragment_seaside.xml" value="0.2" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/single_row_item.xml" value="0.18" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/single_row_item_city.xml" value="0.3177842565597668" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/single_row_item_countryside.xml" value="0.209375" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/single_row_item_jungle.xml" value="0.209375" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/layout/single_row_item_south_asia.xml" value="0.209375" />
+        <entry key="..\:/Users/Vibhu/AndroidStudioProjects/MoodMastNew/app/src/main/res/menu/menu_bottom.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

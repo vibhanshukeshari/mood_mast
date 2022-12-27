@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@drawable/controller_shape"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SeasideFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        android:id="@+id/recyclerView">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+
+
+</FrameLayout>
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:forceDarkAllowed="false"-->
+<!--android:background="@drawable/controller_shape"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--tools:context=".SeasideFragment">-->
+
+<!--<ScrollView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rLRootSeagull"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVSeagull"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:elevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/lLSeagull"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVSeagull"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/seagull_hd" />-->
+
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderSeagull"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagull"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVSeagull"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagull"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/seagull"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVWind"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:strokeColor="@color/boldi_blue"-->
+<!--                    app:strokeWidth="0dp"-->
+<!--                    android:elevation="10dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/lLWind"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVWind"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:src="@drawable/seagull_hd"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderWind"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWind"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVWind"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWind"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/wind"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rLRootSeagul"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVSeagul"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:elevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/lLSeagul"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVSeagul"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/seagull_hd" />-->
+
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderSeagul"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVSeagul"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/seagull"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVWin"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:strokeColor="@color/boldi_blue"-->
+<!--                    app:strokeWidth="0dp"-->
+<!--                    android:elevation="10dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/lLWin"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVWin"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:src="@drawable/seagull_hd"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderWin"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVWin"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/wind"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rLRootSeagul1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVSeagul1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:elevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/lLSeagul1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVSeagul1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/seagull_hd" />-->
+
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderSeagul1"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul1"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVSeagul1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul1"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/seagull"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVWin1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:strokeColor="@color/boldi_blue"-->
+<!--                    app:strokeWidth="0dp"-->
+<!--                    android:elevation="10dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/lLWin1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVWin1"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:src="@drawable/seagull_hd"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderWin1"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin1"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVWin1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin1"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/wind"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rLRootSeagul3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVSeagul3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:elevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/lLSeagul3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVSeagul3"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/seagull_hd" />-->
+
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderSeagul3"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul3"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVSeagul3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul3"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/seagull"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVWin3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:strokeColor="@color/boldi_blue"-->
+<!--                    app:strokeWidth="0dp"-->
+<!--                    android:elevation="10dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/lLWin3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVWin3"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:src="@drawable/wind_hd"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderWin3"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin3"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVWin3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin3"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/wind"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/rLRootSeagul2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginEnd="5dp">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVSeagul2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:elevation="10dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/lLSeagul2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVSeagul2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:src="@drawable/seagull_hd" />-->
+
+<!--                    </RelativeLayout>-->
+
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderSeagul2"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul2"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVSeagul2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVSeagul2"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/seagull"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+
+<!--            </RelativeLayout>-->
+
+
+
+
+
+
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/cVWin2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:cardCornerRadius="15dp"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    app:strokeColor="@color/boldi_blue"-->
+<!--                    app:strokeWidth="0dp"-->
+<!--                    android:elevation="10dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/lLWin2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/iVWin2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:layout_height="100dp"-->
+<!--                            android:src="@drawable/wind_hd"-->
+<!--                            android:scaleType="centerCrop"-->
+<!--                            android:foreground="?attr/selectableItemBackgroundBorderless"-->
+<!--                            android:padding="0dp"/>-->
+
+
+<!--                    </LinearLayout>-->
+
+
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--                <com.google.android.material.slider.Slider-->
+<!--                    android:id="@+id/sliderWin2"-->
+<!--                    android:layout_width="110dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin2"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-10dp"-->
+<!--                    android:value="60"-->
+<!--                    android:valueFrom="0"-->
+<!--                    android:valueTo="100"-->
+<!--                    app:thumbColor="@color/white"-->
+<!--                    app:trackColorActive="@color/white"-->
+<!--                    app:trackColorInactive="#4dffffff" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tVWin2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/cVWin2"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_margin="1dp"-->
+<!--                    android:text="@string/wind"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="16sp" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--</ScrollView>-->
+
+<!--</FrameLayout>-->

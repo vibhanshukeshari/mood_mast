@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_seaside"
+        android:enabled="true"
+        android:icon="@drawable/seaside"
+        android:title="Seaside"/>
+    <item
+        android:id="@+id/menu_city"
+        android:enabled="true"
+        android:icon="@drawable/city"
+        android:title="City"/>
+    <item
+        android:id="@+id/menu_jungle"
+        android:enabled="true"
+        android:icon="@drawable/jungle"
+        android:title="Jungle"/>
+    <item
+        android:id="@+id/menu_countryside"
+        android:enabled="true"
+        android:icon="@drawable/countryside"
+        android:title="Countryside"/>
+    <item
+        android:id="@+id/menu_asia"
+        android:enabled="true"
+        android:icon="@drawable/asiasouth"
+        android:title="South Asia"/>
+
+</menu>

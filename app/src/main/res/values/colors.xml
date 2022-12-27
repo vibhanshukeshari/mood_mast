@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="black">#FFffff</color>
+    <color name="white">#FFFFFF</color>
+    <color name="boldi_blue">#168c9c</color>
+    <color name="opacity50">#80ffffff</color>
+    <color name="opacity80">#ccffffff</color>
+    <color name="opacity40">#ccffffff</color>
+<!--    seaside color theme-->
+    <color name="prussian_blue_0">#030d34</color>
+    <color name="prussian_blue_1">#0e193b</color>
+    <color name="prussian_blue_3">#0a122c</color>
+    <color name="prussian_blue_4">#168c9c</color>
+<!--    city color theme-->
+    <color name="arsenic_0">#3b444b</color>
+    <color name="arsenic_1">#596772</color>
+    <color name="arsenic_3">#1f2729</color>
+
+    <color name="unknown">#9b8c98</color>
+
+</resources>
+
